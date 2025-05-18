@@ -14,7 +14,7 @@ Acadmia is a modern, user-friendly online platform for book lovers. It allows us
 
 **Frontend**:  
 - React.js  
-- Tailwind CSS / Bootstrap  
+- Tailwind CSS 
 
 **Backend**:  
 - Node.js  
