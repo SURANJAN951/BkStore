@@ -1,0 +1,58 @@
+created 2 folders frontend and backend
+using tailwind vite installed
+daisuy ui used for navbar
+then google font se poppins aur senserif liye
+
+ham public folder me static images ko rakhte hai, jo change nhi hota like logo, banner, bg images, favicon, matlb seo related etc
+Src/assets folder (ya svg/avtar type folders) me vo images rakhte hain:
+Jo import karni padti hai
+Jo user ke hisaab se change hoti hain
+(like avatar, product image, user-uploaded pics etc.)
+
+Banner lagaye
+fir footer ko lagaye
+
+ab list.json banaye public folder me ye ek array hoga jisme json format me data rakhenge,
+ab isme har book ko ek unique id denge jisse ham ushe uniquely identify kar paaye,name
+
+React Slick Slider install kiye
+
+ab course component banake usme kaam karenge
+fir Home.jsx banaye, then react router dom install kiye
+
+ab courses folder bana ke uske andar Courses.jsx banaye
+
+note-react ka StrictMode jo Main.jsx me hota hai vo components ko do baar render karata hai bs development ke time taki error ko 
+pata kiya ja sake not at production time, aur BrowserRouter diye gye url ko render karata hai isliye ham StrictMode ko hata diye
+
+ab course page design kar diye aur back button laga diye jisse kie home screen pe vapas aa jaye iske liye back button ko 
+<Link> se wrap kiye - <Link to="..."> – Short Notes:
+Part of React Router.
+Used to navigate between pages without refreshing the browser.
+Replaces traditional <a href="...">.
+to prop defines the path to navigate to.
+Example:
+<Link to="/about">About</Link>
+
+ab dark mode implement karenge navbar me jo section hai vahi 
+localStorage.getItem('theme')
+👉 Ye check karta hai kya localStorage me pehle se koi theme save hai ya nahi.
+Agar hai, to usi theme (e.g., 'dark' ya 'light') ko use karega.
+Agar nahi hai, to 'light' ko default maan ke use karega.
+So:
+Pehli baar jab user aaye aur koi theme set nahi kiya ho, tab 'light' lagega.
+Agar user ne dark theme select kiya aur wo localStorage me save hai, to dark lagega.
+fir tailwind ki config file me dark mode selector dalenge
+
+ab Login.jsx banaye login karne ke liye aur usme daisuy ui se modal utha ke isme import kiye then Navbar.jsx ke login me onlick 
+pe usko call karenge 
+
+ab login vale form me agar signup karna hoga to signup page khulna chahiye to 
+Signup.jsx banaye
+Dailog-> Button dabane pe dialog open hota hai.
+Dialog ek div hai jo poore screen pe overlay karta hai.
+Close button se dialog hat jata hai.
+
+ab login ka data store karana hai to react hook form install kiye
+
+ab Contact.jsx banaye contact us karne ke liye

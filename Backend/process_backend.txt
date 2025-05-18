@@ -1,0 +1,84 @@
+npm init
+some steps after-> created git repo after that paste that link-https://github.com/SURANJAN951/BkStore.git
+npm install express
+
+our entry point is index.js so created index.js
+for running npm start we wrote start in scrips of package.json bcoz start is not predefined command
+
+now if we change anything in our index.js then we'll have to restart the server to get reflect changes, but
+this is time consuming so we install nodemon reflect changes withour need restart of server... npm i nodemon
+and in package.json we wrote nodemon before the index.js
+
+now install dotenv-> npm i dotenv and created .env file in this file we w'll write our port no.
+
+AB ES6 me require se hat ke import vala features aa gya hai so for using that we have to write module in the type section of package.json
+
+now we will write the code to connect with mongo db
+copied mongo db uri and paste in .env and after pasting we also write /dbname
+ab mongoose install karenge, isike andar connect method hai jiska use karke ham db se connect karenge
+ab try catch block me hamko likhna hota hai kuch agar locally mongo db use kar rahe hai jaise ki mongo db compass to hamko 
+do line likhna padta hai useNewUrlParser aur unifiedTopology you can see in index.js
+
+ab model folder banaye uske andar book.model.js banaye
+ab frontend me jo-jo frontpage pe tha uska ham backend me schema design karenge
+
+ab controller folder banaye uske andar book.controller.js banaye
+
+now created route folder and book.route.js created in this folder
+
+ab mongo db compass me jayenge aur book collection me jake add data krke jaha pe frontend folder hai
+vaha se list.json ko isme add kar denge
+
+ab frontend se link karne ka time hai
+
+frontend me axios ko install karo
+ab backend ki api ko call karo jo hamne define kiya hai, 
+Course.jsx me jake ab kro sab
+state banaye book setBook
+
+CORS ek security feature hai jo browser me apply hota hai aur ek website ko doosre domain se resources access karne se rokta hai.
+ Agar frontend aur backend alag domains, ports, ya protocols pe run kar rahe hote hain, toh CORS error aata hai.
+Backend me CORS enable karne ka tarika:
+Install CORS Package:
+npm install cors
+aur backend vale folder ke index.js cors ko import karo
+cors middleware hota hai
+aur list.map ko hata ke book.map kiye
+
+ab freebook vale me bhi same kuch changes karenge
+
+ab list.json bhi delete kar denge frontend se.
+
+ab dhyan se suno ab user ko authenticate login register karana hai ye har project me aapko requirement hogi to haan dhyan se 
+suno aur karo... model me jake user ka model create kiye
+
+ab user ka controller banaye, user.controller.js
+a controller for a user refers to the part of the backend that contains the logic for handling user-related requests. 
+It acts as a middle layer between the routes and the database/models.
+
+ab jo hamne postman me fullname ye sab likha to usko body kahte hai usko copy karenge, aur apne controller me paste karenge.
+
+ab user.route.js banaye route folder me.
+
+API endpoint = ek URL + method (GET/POST/PUT/DELETE)
+Frontend uss endpoint par request bhejta hai.
+Backend uss request ko process karta hai (controller ke zariye), aur data ya response wapas bhejta hai
+
+ab password jo mongo db me store ho raha hai vo aise hi dikh raha hai to useko bcrypt karenge to pehle
+isko install karo- npm i bcryptjs
+
+ab login ke liye bhi controller define karenge... user.controller.js me
+
+now let's move to frontend folder 
+go inside Signup.jsx
+
+ab chalenge login vale pe signup vala code copy kiye aur paste karke kuch changes kiye
+
+ab ham chahte ki jo alert show kar raha hai login sucessfull or signup sucessfull uske jagah pe koi achha sab
+pop up aaye to ham use karenge react hot toast, aur frontend vale terminal me install karenge
+aur app.jsx me niche me <Toaster /> iskko rakh denge
+ab differenet operation ke liye diff toast use karenge jaise sucess ke liye success toast aur login.jsx me alert ke jagah usko paste karenge
+
+ab frontend me context api create karenge aur uske through local storage se user ko recieve karenge apne api ke andar
+aur usko another component  me use karenge.
+src ke andar folder create karo context
